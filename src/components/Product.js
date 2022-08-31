@@ -13,7 +13,7 @@ export default class Product extends Component {
                 <ProductConsumer>
                         {value => (<div className="img-container p-5" onClick={() => value.handleDetail(id)}>
                             <Link to="/details">
-                                <img src={img} alt="product" className="card-img-top" />
+                                <img style={{height:"300px",width:"200px"}} src={img} alt="product" className="card-img-top" />
                             </Link>
                             <button className="cart-btn" disabled={inCart ? true : false}
                                 onClick={() => {
@@ -50,13 +50,21 @@ Product.propTypes = {
 }
 const ProducrWrapper =styled.div`
 .card{
-    border-color:tranparent;
+    height:400px;
+     border-color:tranparent;
     transition:all 1s linear;
+    position: relative;
+     z-index: 1;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .card-footer{
     background:transparent;
     border-top:transparent;
     transition:all 1s linear;
+    position: absolute;
+  bottom: 8px;
+  z-index: 1;
+
 }
 &:hover{
     .card{
@@ -79,13 +87,15 @@ const ProducrWrapper =styled.div`
 }
 .cart-btn{
     position:absolute;
-    bottom:0;
+    bottom:0px;
     right:0;
     padding:0.2rem 0.4rem;
     background:var(--lightBlue);
     color:var(--mainWhite);
     font-size:1.4rem;
     border-radius:0.5 rem 0 0 0;
+    z-index: 2;
+    
      }
 .img-container:hover .cart-btn{
     transform:translate(0, 0);
