@@ -6,21 +6,24 @@ import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Cart from "./components/Cart";
-import Default from "./components/Default";
-import Modal from './components/Modal';
+ import Modal from './components/Modal';
+import Footer from './components/footer';
+ import Home from './components/home';
 
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
+       <Navbar />
       <Switch>
-        <Route exact path="/" component={ProductList} />
+         <Route exact path="/" component={Home} />
+        <Route path="/product" component={ProductList} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
-        <Route component={Default} />
-      </Switch>
+       </Switch>
       <Modal />
-    </React.Fragment>
+      <Footer/>
+     </React.Fragment>
+
   );
 }
 

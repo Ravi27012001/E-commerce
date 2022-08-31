@@ -6,6 +6,7 @@
  --mainYellow:#ffa400;
 }
 body{
+  border: 1px solid black;
   font-family:"Anton", sans-serif !important;
   background:var(--mainWhite) !important;
   color:var(--mainDark) !important;
@@ -37,4 +38,69 @@ body{
   cursor:pointer;
   font-size:1.2rem;
   color:var(--mainYellow);
+}
+
+.App {
+  text-align: center;
+}
+footer {
+  background-color: #a2a4b8;
+   padding: 30px 0;
+  color: #fff;
+    
+}
+.container1{
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+
+}
+.box{
+  flex: 5;
+}
+.box1{
+  margin-left: 20px;
+  flex: 5;
+}
+footer h1 {
+  margin-bottom: 30px;
+  color: #e94560;
+  font-weight: 800;
+}
+footer .img {
+  background-color: #0c2a4d;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+footer .img i {
+  font-size: 20px;
+  margin: 5px;
+}
+footer .img span {
+  margin-top: 5px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+footer h2 {
+  margin-bottom: 20px;
+}
+footer li {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.btnn{
+  display: flex;
+   justify-content: space-between;
+   background-color:transparent;
+   position: relative;
+   bottom: 20vw;
+}
+.ishop{
+font-size:50px;
+color:#FF4252;
+text-align: center;
 }

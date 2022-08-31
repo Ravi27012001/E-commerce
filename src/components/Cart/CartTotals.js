@@ -18,11 +18,11 @@ export default function CartTotals({value}) {
                         </button>
                     </Link>
                     <h5>
-                        <span className="text-title">subtotal :</span>
+                        <span className="text-title">subtotal Price:</span>
                         <strong>{cartSubTotal}</strong>
                     </h5>
                     <h5>
-                        <span className="text-title">subtotal :</span>
+                        <span className="text-title">Shipping Charge :</span>
                         <strong>{cartTax}</strong>
                     </h5>
                     <h5>

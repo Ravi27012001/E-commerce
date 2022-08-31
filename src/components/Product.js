@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 export default class Product extends Component {
     render() {
-        const {id, title, img, price, inCart} = this.props.product;
+        const {id, title, img, price, inCart} = this.props.product; 
         return (
             <ProducrWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
                <div className="card">
@@ -86,9 +86,7 @@ const ProducrWrapper =styled.div`
     color:var(--mainWhite);
     font-size:1.4rem;
     border-radius:0.5 rem 0 0 0;
-    transform:translate(100%, 100%);
-    transition:all 1s linear;
-}
+     }
 .img-container:hover .cart-btn{
     transform:translate(0, 0);
 }
