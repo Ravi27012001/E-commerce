@@ -54,8 +54,7 @@ const ProducrWrapper =styled.div`
      border-color:tranparent;
     transition:all 1s linear;
     position: relative;
-     z-index: 1;
-     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .card-footer{
     background:transparent;
@@ -63,8 +62,7 @@ const ProducrWrapper =styled.div`
     transition:all 1s linear;
     position: absolute;
   bottom: 8px;
-  z-index: 1;
-
+ 
 }
 &:hover{
     .card{
@@ -94,8 +92,7 @@ const ProducrWrapper =styled.div`
     color:var(--mainWhite);
     font-size:1.4rem;
     border-radius:0.5 rem 0 0 0;
-    z-index: 2;
-    
+     
      }
 .img-container:hover .cart-btn{
     transform:translate(0, 0);
